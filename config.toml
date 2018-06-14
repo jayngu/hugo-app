@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "/"
 DefaultContentLanguage = "en"
 title = "jayngu.com"
 theme = "beautifulhugo"
