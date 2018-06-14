@@ -1,0 +1,110 @@
+baseurl = "*"
+DefaultContentLanguage = "en"
+title = "jayngu.com"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[Params]
+  homeTitle = "Jason Nguyen" # header on the home page
+  subtitle = "Tech & DevOps Enthusiast | Eternal Learner | Social Media Slave"
+  logo = "img/avatar-icon.png"
+  favicon = "img/avatar-favicon.png"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  useHLJS = true
+  socialShare = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+
+[[Params.bigimg]]
+  src = "img/black-1.jpeg"
+  position = "center"
+[[Params.bigimg]]
+  src = "img/purple-2.jpeg"
+[[Params.bigimg]]
+  src = "img/purple-1.jpeg"
+
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "Jason Nguyen"
+  website = "https://www.jayngu.com"
+  email = "jason.ly.nguyen@gmail.com"
+  twitter = "jayngu23"
+  github = "jayngu"
+  linkedin = "jasonlynguyen"
+  #facebook = "username"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  #gitlab = "username"
+  #bitbucket = "username"
+  #reddit = "username"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "username"
+  #telegram = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "Résumé/CV"
+    url = "page/resume/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "Menu"
+    name = "Menu"
+    weight = 4
+
+[[menu.main]]
+    parent = "Menu"
+    name = "Categories"
+    url = "categories"
+    weight = 1
+
+[[menu.main]]
+    parent = "Menu"
+    name = "Tags"
+    url = "tags"
+    weight = 2

@@ -1,0 +1,1 @@
+This blog started out as a small goal and quickly grew into a cool project. It is now running as a service on my `Kubernetes` cluster. K8s might be a little overkill, but I wanted a personal cluster to play on. What better way to apply `container orchestration` than to start a blog myself?
