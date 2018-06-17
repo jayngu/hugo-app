@@ -18,7 +18,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
   homeTitle = "Jason Nguyen" # header on the home page
-  subtitle = "Tech & DevOps Enthusiast | Eternal Learner | Social Media Slave"
+  subtitle = "IT & DevOps Enthusiast | Continual Learner"
   logo = "img/avatar-icon.png"
   favicon = "img/avatar-favicon.png"
   dateFormat = "January 2, 2006"
