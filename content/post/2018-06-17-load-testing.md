@@ -7,11 +7,22 @@ tags: ["nginx", "kubernetes", "hugo"]
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]
 ---
 
-The other day I came across a medium post which introduced me to the site: [**loader.io**](https://loader.io/). Their service is free (baseline) and allows me to easily test up to several hundred concurrent connections a second. It was pretty convenient that I found this randomly because I was trying to figure out a simple way of stress testing my blog. My current cluster is set up with 5 `nginx:alpine` servers with default configurations being load balanced by a `nginx ingress controller`. I was curious as to what this basic setup could handle. I want to reiterate that the blog setup is definitely overkill for a simple `hugo` generated site without a backend. My goal was to have a fun lab environment to play with and potentially break. 
+The other day I came across a medium post which introduced me to the site: [**loader.io**](https://loader.io/). Their service is free (baseline) and allows me to easily test up to several hundred concurrent connections a second. [**SendGrid**](https://sendgrid.com/) describes their service as:
 
-The below table summarizes the results of the tests done through their GUI:
+> [...] a FREE load testing service that allows you to stress test
+your web-apps & apis with thousands of concurrent connections.
+
+ It was pretty convenient that I found this randomly because I was trying to figure out a simple way of stress testing my blog. My current cluster is set up with 5 `nginx:alpine` servers with default configurations being load balanced by a `nginx ingress controller`. I was curious as to what this basic setup could handle. I want to reiterate that the blog setup is definitely overkill for a simple `hugo` generated site without a backend. My goal was to have a fun lab environment to play with and potentially break. 
+
+The process to start using it was pretty simple.
+
+- Create an account
+- Register your web app via HTTP or DNS verification (paid)
+- Run/Schedule tests on your web app via GUI or their API
 
 ---
+
+### Summary of Test Results
 
 | Clients/min   | Avg Response Time | Successful Responses | Data sent by Loader | Data Received by Clients |
 | ------------- |:-----------------:| --------------------:|--------------------:|------------------------: |
@@ -22,9 +33,10 @@ The below table summarizes the results of the tests done through their GUI:
 
 ---
 
-The below animation is footage of 30 seconds of the 10 000 client test. This should give an easily digestable summary:
+The below animation is footage of the 10 000 client test. This should give an easily digestable summary:
 
 ![loader.io 10,000 clients](/img/loaderio.gif)
+*30 seconds of the load test*
 
 ---
 
